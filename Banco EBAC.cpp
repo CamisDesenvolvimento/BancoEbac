@@ -109,7 +109,8 @@ int main()
  	 printf("\t1 - Registrar nomes\n");
  	 printf("\t2 - Consultar nomes\n");
 	 printf("\t3 - Deletar nomes\n");
-	 printf("Opção"); // Fim do Menu
+	 printf("\t4 - Sair do banco\n");
+	 printf("Opção - "); // Fim do Menu
 	
 	 scanf("%d", &opcao); // Armazenando a escolhado usuario 
 	
@@ -128,6 +129,12 @@ int main()
 		case 3:
 		    deletar();
 		break;
+		
+		case 4:
+			printf("Obrigado por ultilizar o nosso banco\n");
+			return 0;
+		break;
+		
 		
 		default: 
 		    printf("Essa opcao não está disponivel\n");
